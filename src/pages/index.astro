@@ -1,23 +1,20 @@
 ---
-import ExampleGrid from "@/components/example-grid.astro";
-import PageHeader from "@/components/page-header.astro";
-import { navMenuConfig } from "@/config/nav-menu";
+import BlogHeader from "@/components/blog-header.astro";
+import BlogCard from "@/components/cards/blog-card.astro";
 import MainLayout from "@/layouts/main-layout.astro";
+import { getPosts } from "@/lib/fetchers";
 
-const examples = navMenuConfig.examplesNav[0].items;
-const pages = navMenuConfig.pagesNav[0].items;
+const posts = await getPosts();
 ---
 
-<MainLayout title="">
-  <div class="bg-background-200">
-    <section class="container py-12">
-      <PageHeader
-        heading="Discovery"
-        text="Differents pages and examples apps built with Astro v4.5, shadcn/ui & react js. Fully Open Source."
-      />
+<MainLayout title="Static Blog">
+  <section class="container py-10">
+    <BlogHeader title="Blog" />
 
-      <ExampleGrid title="Pages" items={pages} />
-      <ExampleGrid title="Examples Apps" items={examples} />
-    </section>
-  </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-11 lg:gap-y-16 lg:gap-x-8"
+    >
+      {posts.map((post) => <BlogCard {...post} />)}
+    </div>
+  </section>
 </MainLayout>

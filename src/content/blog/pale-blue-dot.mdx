@@ -1,0 +1,83 @@
+---
+title: "Piso Granada"
+description: "Carl Sagan's reflection on our planet Earth"
+pubDate: "Sep 10 2023"
+cover: "https://fotos15.apinmo.com/4348/22248092/6-3.jpg"
+# cover: "/images/blog/placeholder-4.jpg"
+category: "Granada"
+---
+
+import Carousel from '/src/components/Carousel'; // Adjust the path
+
+Look again at that dot. That’s here. That’s home. That’s us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every “superstar,” every “supreme leader,” every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam.
+
+{/* <Carousel images={['https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp', 'https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp', 'https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp']} /> */}
+
+The Earth is a very small stage in a vast cosmic arena. Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
+
+Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.
+
+
+{/* <Carousel 
+  images={[
+    'https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp',
+    'https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp',
+    'https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp'
+  ]}
+/>
+<div className="carousel-caption absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg bg-black bg-opacity-50 p-4">
+  Earth, our home in the vast cosmos.
+</div> */}
+
+
+<div class="columns-3xs ...">
+  <img class="aspect-3/2 ..." src="/src/assets/img/6-1s.jpg" />
+  <img class="aspect-square ..." src="/src/assets/img/6-2s.jpg" />
+  <img class="aspect-square ..." src="https://fotos15.apinmo.com/4348/22248092/6-3.jpg" />
+  <img class="aspect-square ..." src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp" />
+</div>
+
+---
+
+| Property             | Description                                                                                             |
+|----------------------|---------------------------------------------------------------------------------------------------------|
+| address              | The full street address of the property.                                                               |
+| city                 | The city in which the property is located.                                                              |
+| state/province       | The state or province in which the property is located.                                                 |
+| zip/postalCode       | The zip or postal code of the property.                                                                |
+| country              | The country in which the property is located.                                                           |
+| propertyType         | The type of property (e.g., house, condo, apartment, land, commercial).                                |
+| bedrooms             | The number of bedrooms in the property.                                                                  |
+| bathrooms            | The number of bathrooms in the property.                                                                 |
+| squareFootage        | The total square footage of the property.                                                              |
+| lotSize              | The size of the land on which the property sits.                                                        |
+| yearBuilt            | The year the property was built.                                                                        |
+| price                | The asking or sale price of the property.                                                               |
+| description          | A detailed description of the property, including features and amenities.                               |
+| images               | An array or list of URLs to images of the property.                                                      |
+| listingAgent         | The name and contact information of the real estate agent listing the property.                    |
+| listingDate          | The date the property was listed for sale.                                                              |
+| status               | The current status of the property (e.g., for sale, sold, pending).                                     |
+| features             | A list of key features (e.g., hardwood floors, granite countertops, swimming pool).                   |
+| amenities            | A list of community amenities (e.g., gym, clubhouse, park).                                            |
+| hoaFees              | Homeowners Association (HOA) fees (if applicable).                                                     |
+| taxes                | Annual property taxes.                                                                                 |
+| virtualTourURL       | URL to a virtual tour of the property.                                                                  |
+| latitude             | The latitude coordinate of the property's location.                                                  |
+| longitude            | The longitude coordinate of the property's location.                                                 |
+| parking              | Information about parking (e.g., garage, driveway, number of spaces).                                  |
+| appliancesIncluded   | List of appliances included with the property (e.g. refrigerator, dishwasher, washer, dryer).         |
+| heatingType          | Type of heating system (e.g. forced air, radiant).                                                    |
+| coolingType          | Type of cooling system (e.g. central air, window units).                                              |
+| roofType             | Type of roof (e.g. shingle, tile, metal).                                                             |
+| foundationType       | Type of foundation (e.g. slab, crawl space, basement).                                                |
+| exteriorMaterial     | The material used for the exterior of the property (e.g. brick, siding, stucco).                        |
+| interiorFeatures     | List of interior features (e.g. fireplace, vaulted ceilings, walk-in closets).                         |
+| neighborhood         | The name of the neighborhood the property is located in.                                               |
+| schoolDistrict       | The school district the property is located in.                                                        |
+| zoning               | The zoning classification of the property.                                                              |
+| lastSoldDate         | The date the property was last sold.                                                                   |
+| lastSoldPrice        | The price the property was last sold for.                                                              |
+| renovations          | Information about any renovations or updates made to the property.                                     |
+| accessibilityFeatures| Features that make the property accessible for people with disabilities (e.g. ramps, wider doorways). |

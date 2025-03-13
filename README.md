@@ -1,3 +1,12 @@
+
+Used for RE:
+
+* https://github.com/JAlcocerT/cybernetik-realestate-moises
+* https://github.com/JAlcocerT/ScrewFastMoiRealEstate
+
+---
+
+
 # Astronomy
 
 An open source application built using the latest features in Astro v4 with shadcn/ui.

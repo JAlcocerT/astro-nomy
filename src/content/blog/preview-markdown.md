@@ -3,7 +3,7 @@ title: "Preview Markdown"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 11 2022"
 cover: "/images/blog/placeholder-about.jpg"
-category: "markdown"
+category: "Cadiz"
 ---
 
 Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.
